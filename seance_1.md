@@ -1,7 +1,7 @@
 Introduction à la programmation orientée objet
 ==============================================
 
-Duranct cette séance et les suivante nous allons developper une petite application
+Durant cette séance et les suivante nous allons developper une petite application
 dans laquelle on aide à la confection de cadeaux avec des structures élémentaires disponibles
 dans Python puis nous créerons nos propres structures.
 
