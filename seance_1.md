@@ -31,7 +31,7 @@ creation des identifieurs
 import random
 import string
 def make_identifier(k=4):
-    return ''.joinirandom.choices(string.ascii_uppercase, k=4))
+    return ''.join(random.choices(string.ascii_uppercase, k=4))
 ```
 
 Questions
