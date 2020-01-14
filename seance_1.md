@@ -40,9 +40,9 @@ def create_point(x, y):
     d = {'x': x, 'y': y, 'id': make_identifier()}
     return d
 
-def compute_norm(d):
+def wait():
     time.sleep(0.1) #simulate very long computation
-
+    return 8
 ```
 
 Questions
