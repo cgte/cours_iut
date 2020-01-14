@@ -34,6 +34,17 @@ def make_identifier(k=4):
     return ''.join(random.choices(string.ascii_uppercase, k=4))
 ```
 
+
+```python
+def create_point(x, y):
+    d = {'x': x, 'y': y, 'id': make_identifier()}
+    return d
+
+def compute_norm(d):
+    time.sleep(0.1) #simulate very long computation
+
+```
+
 Questions
 ---------
 Pour toutes les fonctions pensez à bien afficher ce qui est fait.
