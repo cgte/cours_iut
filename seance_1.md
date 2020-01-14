@@ -5,6 +5,12 @@ Durant cette séance et les suivante nous allons developper une petite applicati
 dans laquelle on aide à la confection de cadeaux avec des structures élémentaires disponibles
 dans Python puis nous créerons nos propres structures.
 
+aides mémoire en python
+----------------------
+
+https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf
+https://s3.amazonaws.com/dq-blog-files/python-cheat-sheet-intermediate.pdf
+
 Position du problème
 --------------------
 
