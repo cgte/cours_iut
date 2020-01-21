@@ -23,11 +23,7 @@ def create_gift(kind):
 
 
 def create_gifts(kinds):
-    for kind in kinds:
-        t = time.time()
-        yield create_gift(kind)
-        print(f"time taken for creating gift {time.time() - t:.4f}")
-    # return [ for kind in kinds]
+    return [create_gift(kind) for kind in kinds]
 
 
 sledge = {"gifts": [], "max_load": 12, "time_per_gift": 0.5}
