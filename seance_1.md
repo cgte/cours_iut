@@ -95,17 +95,35 @@ Nous utilisons uniquement des dictionnaires et des fonctions, nous obligés de n
 Pour creer une classe `Point` avec deux attributs `x` et `y`.
 
 ```python
+def create_point(x,y):
+    return {'x': x, 'y': y}
+
+
 class Point:
+    """ creates a simple point
+    >>> point = Point(0, 0)
+    >>> origine.x
+    0
+    """
+
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
 ```
 
+
 Si on veut obtenir la distance à l'origine on ajoute la méthode `norme2` comme suit.
 
 ```python
 class Point:
+    """ Models simple points
+    >>> p = Point(0,1)
+    >>> p.x
+    0
+    >>> p.norm2()
+    1
+
     def __init__(self, x, y):
         self.x = x
         self.y = y
