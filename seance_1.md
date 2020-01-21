@@ -62,9 +62,10 @@ def create_point(x, y):
     d = {'x': x, 'y': y, 'id': make_identifier()}
     return d
 
-def wait():
-    time.sleep(0.1) #simulate very long computation
-    return 8
+def wrap(aremplir):
+    print("On emballe le cadeau ")
+
+    sleep(quelquechose)
 ```
 
 Questions
@@ -124,7 +125,7 @@ class Point:
     >>> p.norm2()
     1
 
-    def __init__(self, x, y):
+    def __init__(self, x, y): #Le constructeur
         self.x = x
         self.y = y
         # Notez bien que la fonction donne l'impression de ne rien renvoyer.
@@ -138,11 +139,19 @@ class Point:
 ```
 plutôt que
 ``` python
-def norm_point(x, y):
-    return (x**2 + y **2) ** 0.5
+def create_point(x,y):
+    return {'x': x, 'y': y}
+
+def norm_point(p):
+    return (p['x']**2 + p['y'] **2) ** 0.5
 ```
 
-* Question 6 : créez les classes Gift et Sledge, modifiez le code pour que les fonctions deviennent des méthodes, sauf process_gifts.
+`self` désigne l'object courant par convention (c'est le premier paramètre)
+
+* Question 6.a : créez les classes Gift et Sledge, implémentez les methodes `__init__` pour les deux classes et la methode `wrap` pour sledge
+* Quesiton 6.b: relancer le code
+
+.
 
 
 #Methodes et variables de classe

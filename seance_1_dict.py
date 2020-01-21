@@ -3,7 +3,6 @@ import time
 
 def create_gift(kind):
     print(f"creating {kind} gift")
-    time.sleep(1)
     if kind == "small":
         weight = 0.5
         duration = 1
