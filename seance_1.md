@@ -19,6 +19,12 @@ https://inforef.be/swi/download/cours_python.zip Les fichiers source
 
 https://automatetheboringstuff.com/ Se familiariser avec les chapitres 1 à 6
 
+Correction de la premiere partie
+--------------------------------
+
+https://github.com/cgte/cours_iut/blob/master/seance_1_dict.py
+
+
 Position du problème
 --------------------
 
@@ -36,6 +42,8 @@ Quand le traineau livre on n'emballe pas de cadeau.
 
 À savoir
 --------
+
+
 
 Pour modeliser l'attente nous utiliserons la fonction time.sleep
 `from time import sleep` ou bien `import time` puis `sleep(f)` où f est le nombre de secondes d'attente.
