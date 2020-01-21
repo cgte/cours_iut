@@ -11,6 +11,14 @@ aides mémoire en python
 https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf
 https://s3.amazonaws.com/dq-blog-files/python-cheat-sheet-intermediate.pdf
 
+Liens de reference
+------------------
+
+https://inforef.be/swi/download/apprendre_python3_5.pdf a partir de la page 50
+https://inforef.be/swi/download/cours_python.zip Les fichiers source
+
+https://automatetheboringstuff.com/ Se familiariser avec les chapitres 1 à 6
+
 Position du problème
 --------------------
 
