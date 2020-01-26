@@ -176,6 +176,15 @@ Listes en compréhension
 >>> gifts = [create_gift(kind) for kind in ['s', 's', 'm', 'l']]
 
 ```
+Dictionnaires en compréhension
+
+``` python
+
+>>> letter_count = {word: len(word) for word in 'bonjour hola hello'.split()}
+>>> letter_count
+
+```
+
 
 On crée ainsi des cadeaux que l'on peut placer dans le traineau
 
