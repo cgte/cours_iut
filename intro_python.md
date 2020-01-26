@@ -175,6 +175,8 @@ Listes en compréhension
 
 >>> gifts = [create_gift(kind) for kind in ['s', 's', 'm', 'l']]
 >>> gifts
+[{'kind': 's', 'duree': 1.15}, {'kind': 's', 'duree': 1.15}, {'kind': 'm', 'duree': 1.09}, {'kind': 'l', 'duree': 1.08}]
+
 
 ```
 Dictionnaires en compréhension
