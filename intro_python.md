@@ -1,7 +1,7 @@
 Introduction à Python
 =====================
 
-- À regarder : https://www.youtube.com/watch?v=OSGv2VnC0go
+- À regarder : https://www.youtube.com/watch?v=OSGv2VnC0go Attention c'est en python2
 - À garder sous la main : https://docs.python.org/3/reference/datamodel.html
 
 
@@ -123,6 +123,7 @@ Structures de données de base du langage
 ========================================
 
 Listes, ensembles, dictionnaires.
+
 
 ``` python
 
