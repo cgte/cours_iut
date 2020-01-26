@@ -389,10 +389,10 @@ Point2D:{'x': 1.0, 'y': 3.0}
 ```
 
 Cela fonctionne mais cela pose quelques questions:
-    - On peut desormais creeer des points sans pour autant etre sur de pouvoir les utiliser.
-    - On risque de traiter le cas de l'origine comme cas spécial (en remplaçant None par 0)
-    - La convertion d'une chainde de caractère dépend de la classe
-      Point2D mais pas d'un point en partculier.
+  - On peut desormais creeer des points sans pour autant etre sur de pouvoir les utiliser.
+  - On risque de traiter le cas de l'origine comme cas spécial (en remplaçant None par 0)
+  - La convertion d'une chainde de caractère dépend de la classe
+    Point2D mais pas d'un point en partculier.
 
 On utilise pour ça `@classmethod`
 
