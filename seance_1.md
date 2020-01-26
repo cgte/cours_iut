@@ -148,8 +148,9 @@ def norm_point(p):
 
 `self` désigne l'object courant par convention (c'est le premier paramètre)
 
-* Question 6.a : créez les classes Gift et Sledge, implémentez les methodes `__init__` pour les deux classes et la methode `wrap` pour sledge
-* Quesiton 6.b: relancer le code
+* Question 6.a : créez les classes Gift et Sledge, implémentez les methodes `__init__` pour les deux classes et la methode `wrap` pour gift.
+* Quesiton 6.b : supprimez la methode create_gift et replacez la par Gift
+* Question 6.c : relances le code et bugfixez
 
 .
 

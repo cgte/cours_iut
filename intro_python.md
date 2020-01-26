@@ -217,9 +217,9 @@ unsupported operand type(s) for +=: 'dict' and 'dict'
 
 Quelques constats:
     - On peut facilement prototyper avec les dictionnaires, par contre il
-        faut bien connaitre les fonctions
+      faut bien connaitre les fonctions
     - Cela rend le code difficilement utilisable par quelqu'un d'autre
-        (il doit connaitre notre implémentation pour utiliser les outils)
+      (il doit connaitre notre implémentation pour utiliser les outils)
 
 Un premier exemple une ligne de points. Pour le moment on crée un point en 2D
 avec les coordonnées x et y. Nous allons utiliser des dictionnaires, des namedtuple
