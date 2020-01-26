@@ -1,8 +1,8 @@
 Introduction à Python
 ---------------------
 
-À regarder : https://www.youtube.com/watch?v=OSGv2VnC0go
-À garder sous la main : https://docs.python.org/3/reference/datamodel.html
+- À regarder : https://www.youtube.com/watch?v=OSGv2VnC0go
+- À garder sous la main : https://docs.python.org/3/reference/datamodel.html
 
 
 Types de données fondamentales en python.
