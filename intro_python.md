@@ -182,6 +182,7 @@ Dictionnaires en compréhension
 
 >>> letter_count = {word: len(word) for word in 'bonjour hola hello'.split()}
 >>> letter_count
+{'bonjour': 7, 'hola': 4, 'hello': 5}
 
 ```
 
