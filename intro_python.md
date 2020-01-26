@@ -174,6 +174,7 @@ Listes en compréhension
 ``` python
 
 >>> gifts = [create_gift(kind) for kind in ['s', 's', 'm', 'l']]
+>>> gifts
 
 ```
 Dictionnaires en compréhension
