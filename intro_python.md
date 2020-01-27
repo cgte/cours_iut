@@ -33,12 +33,87 @@ Dans le module str nous avons une fonction swapcase
 
 ```
 
+Listes, ensembles, dictionnaires.
+
+
+``` python
+
+>>> maliste = [1,1,2,3,5,4,7]
+>>> maliste[::-1]
+[7, 4, 5, 3, 2, 1, 1]
+>>> maliste[3]
+3
+>>> maliste[-3]
+5
+>>> uniques = set(maliste)
+>>> uniques
+{1, 2, 3, 4, 5, 7}
+
+>>> mondict = {'un': 1, 'deux': 2, 'trois': 3, 3:'trois'}
+>>> mondict[3]
+'trois'
+>>> mondict['un']
+1
+
+```
+
+Fonctions
+=========
+
+Un fonction est un ensemble d'instructions cohérentes qui effectuent un travail donné
+
+`len` est une fonction qui est directement disponible, `dir` est une autre fonction, `print` aussi est une fonction.
+
+Nous pouvons aussi définir des fonctions avec le mot clef `def`.
+
+``` python
+>>> def fonction_1():
+...     "Renvoie toujours 1"
+...     return 1
+...
+>>> print(fonction_1())
+1
+>>> def ajoute_2(nombre):
+...     resultat =  nombre + 2
+...     return resultat
+...
+>>> ajoute_2(3)
+5
+>>> def creer_un_dictionaire(clefs, valeurs):
+...     """On remplit un dictionnaire avec les clefs et valeurs qui correspondent
+...     """
+...     res = {}
+...     if len(clefs) != len(valeurs):
+...         return None # Early return autorisé en python
+...     for i in range(len(clefs)):
+...         res[clefs[i]] = valeurs[i]
+...     return res
+...
+>>> creer_un_dictionaire(['a', 'b'], [1,5])
+{'a': 1, 'b': 5}
+>>> def remplir_un_dictionnaire(dictionaire, clefs, valeurs):
+...     if len(clefs) != len(valeurs):
+...         return # Early return autorisé en python
+...     for i in range(len(clefs)):
+...         dictionaire[clefs[i]] = valeurs[i]
+...
+>>> vide = {}
+>>> remplir_un_dictionnaire(vide, ['a', 'b'], [1,5])
+>>> vide
+{'a': 1, 'b': 5}
+
+```
+
+@exemple_poo.py
+
+
+
 Notion de classe et de type
 ===========================
 
 ``` python
 >>> try:
-...     str.swapcase(6)
+...     str.swapcase(6) #Essayer directement le code suivant, nous verrons les exceptions plus tard
 ... except Exception as e:
 ...     print(e)
 ...
@@ -119,33 +194,6 @@ Acceder à aux methodes disponibles pour une variable
 
 En réalité tout est objet en python et le langage dispose de beaucoup de capacité d'introspection.
 
-Structures de données de base du langage
-========================================
-
-Listes, ensembles, dictionnaires.
-
-
-``` python
-
->>> maliste = [1,1,2,3,5,4,7]
->>> maliste[::-1]
-[7, 4, 5, 3, 2, 1, 1]
->>> maliste[3]
-3
->>> maliste[-3]
-5
->>> uniques = set(maliste)
->>> uniques
-{1, 2, 3, 4, 5, 7}
-
->>> mondict = {'un': 1, 'deux': 2, 'trois': 3, 3:'trois'}
->>> mondict[3]
-'trois'
->>> mondict['un']
-1
-
-```
-
 
 Position du probleme des cadeaux et du traineau
 
@@ -219,6 +267,11 @@ On crée ainsi des cadeaux que l'on peut placer dans le traineau
 6
 
 ```
+
+
+
+
+
 
 Sucres syntaxiques et réutilisaiton du code
 ===========================================
