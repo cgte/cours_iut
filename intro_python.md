@@ -104,7 +104,6 @@ Nous pouvons aussi définir des fonctions avec le mot clef `def`.
 
 ```
 
-[exemple_poo.py](exemple_poo.py)
 
 
 
