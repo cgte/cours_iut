@@ -2,9 +2,6 @@
 
 # On admet ce code
 class Conteneur:
-    def __init__(self):
-        pass
-
     pass
 
 
