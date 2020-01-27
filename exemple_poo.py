@@ -2,6 +2,9 @@
 
 # On admet ce code
 class Conteneur:
+    def __init__(self):
+        pass
+
     pass
 
 
@@ -42,6 +45,8 @@ def make_point_2(conteneur, x, y):
 point = Conteneur()
 make_point_2(point, 3, 4)
 point.x
+
+
 Conteneur.__init__ = make_point_2
 nouveau_point = Conteneur(5, 6)
 nouveau_point.x
