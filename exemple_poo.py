@@ -1,6 +1,8 @@
 # coding: utf-8
 
 # On admet ce code
+
+
 class Conteneur:
     pass
 
