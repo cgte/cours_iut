@@ -5,9 +5,11 @@ class Conteneur:
     pass
 
 
-# on crée un objet qui peut contenir n'importe quoi
-
 gg = Conteneur()
+
+# On peut ensuite ajouter des données dans les objets renvoyés par
+# l'appel à Conteneur()
+
 
 gg.entier = 1
 print(gg.entier)
@@ -16,6 +18,8 @@ gg.liste = [1, 2, 3, 4]
 gg.autreliste = [None, "bonjour"]
 
 gg.a = "a1"
+
+# On souhaite creer dans notre conteneur
 
 
 def make_point(conteneur, x, y):
