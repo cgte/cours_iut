@@ -9,6 +9,9 @@ class Conteneur:
 
 gg = Conteneur()
 
+gg.entier = 1
+print(gg.entier)
+
 gg.liste = [1, 2, 3, 4]
 gg.autreliste = [None, "bonjour"]
 
