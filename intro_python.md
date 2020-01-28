@@ -4,6 +4,10 @@ Introduction à Python
 - À regarder : https://www.youtube.com/watch?v=OSGv2VnC0go Attention c'est en python2
 - À garder sous la main : https://docs.python.org/3/reference/datamodel.html
 
+Pour s'entraîner
+- https://app.codility.com/programmers/
+- https://www.codewars.com/
+
 
 Types de données fondamentales en python.
 =========================================
