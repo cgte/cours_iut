@@ -76,7 +76,7 @@ Nous pouvons aussi définir des fonctions avec le mot clef `def`.
 ...     return 1
 ...
 >>> print(fonction_1())
-1
+4
 >>> def ajoute_2(nombre):
 ...     resultat =  nombre + 2
 ...     return resultat
