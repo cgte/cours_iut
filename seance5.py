@@ -112,9 +112,6 @@ class Sledge:
 sledge = Sledge()
 
 
-# Tiends mais il faudrait qu'on puisse savoir si le cadeau a été pris
-# Soit a la valeur de return
-#  (exception)
 
 
 app = Bottle()
@@ -139,11 +136,15 @@ reroute_js = '''
 ''' 
 #astuce pour renvoyer dynamiquement vers une autre page
 
+#Question 0L lancer le code et allez sur la page http://localhost:8080/gift
+# recuperez le fichier bottle2.py sur le dépot et mettez la dans votre dossier
+
 @app.post("/gift")  # or @route('/login', method='POST')
 def process_gift():
     kind = request.forms.get("kind") or request.json.get("kind")
-    #Question 1
-    if #question 2:
+    #Question 1 
+    
+    if #question_2:
         yield f"{gift} added to sledge <br/> sledge is now {sledge.gifts}"
     else:
         message = f"sledge is full, shipping {sledge.gifts}<br>"
@@ -169,6 +170,7 @@ def view_sledge():
 @app.route("/ship")
 def ship():
     #Question 4 implementer ici la livraison
+    pass
     
 
 """Question5 ajouter un statut aux cadeaux est il new, wrapped, waiting
@@ -199,7 +201,35 @@ except ValueError as exc:
     #faire quelque chose avec str(exc)
 
 Question 9 : Utiliser le code suivant pour voir un suivi en direct des cadeaux.
+ à la place de 
+if __name__ == "__main__":
+    app.run(host="localhost", port=8080, debug=True)
+    
+    
+copier coller :
+    
 
+from wsgiref.simple_server import make_server, WSGIServer
+from socketserver import ThreadingMixIn
+
+class ThreadingWSGIServer(ThreadingMixIn, WSGIServer): 
+    pass
+
+if __name__ == "__main__":
+    httpd =  make_server('', 8080, app, ThreadingWSGIServer)
+    httpd.serve_forever()
+    
+    
+Ajouter a la vue gift:   
+    yield '''
+    <script language="javascript">
+setInterval(function(){
+   window.location.reload(1);
+}, 500);
+</script>
+    '''
+ Dans deux fenetres creez et voyez l'evolution    
+    
     
 """
 
