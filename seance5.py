@@ -217,8 +217,11 @@ class ThreadingWSGIServer(ThreadingMixIn, WSGIServer):
 
 if __name__ == "__main__":
     httpd =  make_server('', 8080, app, ThreadingWSGIServer)
-    httpd.serve_forever()
-    
+    try:
+        httpd.serve_forever()
+    except:
+        httpd.shutdown()
+        httpd.server_close()    
     
 Ajouter a la vue gift:   
     yield '''
