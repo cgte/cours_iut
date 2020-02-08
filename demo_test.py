@@ -26,7 +26,8 @@ def exemple_doctest(*args, **kwargs):
     """
     >>> exemple_doctest(1,2,3, a=2)
     ((1, 2, 3), {'a': 2})
-    
+    >>> exemple_doctest(1,7)
+    ((1, 7), {})
     """
     return args, kwargs
 
@@ -59,8 +60,9 @@ class MyTestCase(unittest.TestCase):
         self.assertFalse(take_gift(sledge, grand2), f"We should no accept this gift due to lack of free load")
     
         ship(sledge)
-        self.assertEqual(sledge['gifts'], [])
-        self.assertEqual(len(sledge['gifts']), 0)            
+        self.assertFalse(sledge['gifts'])
+        
+                  
     
     
 class ShowSetUpTestCase(unittest.TestCase):
