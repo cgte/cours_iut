@@ -127,13 +127,15 @@ reroute_js = """
 # Question 0L lancer le code et allez sur la page http://localhost:8080/gift
 # recuperez le fichier bottle2.py sur le dépot et mettez la dans votre dossier
 
+
 @app.get("/")
 def index():
     return reroute_js
 
+
 @app.post("/gift")  # or @route('/login', method='POST')
 def process_gift():
-    kind = request.forms.get("kind");:w
+    kind = request.forms.get("kind")
 
     # Question 1: creeer un cadeau de la sorte kind
 
@@ -156,6 +158,8 @@ def view_sledge():
     return json.dumps(sledge.__dict__, default=lambda o: o.__dict__)
 
 """
+
+
 @app.route("/ship")
 def ship():
     # Question 4 implementer ici la livraison
