@@ -17,8 +17,8 @@ def time_call(fonction):
 
 
 class Gift:
-    allowed_kinds = 'small medium large'.split()
-    
+    allowed_kinds = "small medium large".split()
+
     def __init__(self, kind):
         print(f"creating {kind} gift")
         if kind == "small":
@@ -52,17 +52,6 @@ class Gift:
 @time_call
 def create_gift(kind):
     return Gift(kind)
-
-
-@time_call
-def create_gifts(kinds):
-    return [create_gift(kind) for kind in kinds]
-
-
-@time_call
-def onfly_create_gifts(kinds):
-    for kind in kinds:
-        yield create_gift(kind)
 
 
 class Sledge:
@@ -110,14 +99,11 @@ class Sledge:
 
 
 sledge = Sledge()
-
-
-
-
 app = Bottle()
 
 
 from time import sleep
+
 
 @app.get("/gift")
 def gift_form():
@@ -127,24 +113,31 @@ def gift_form():
             <input value="Ajouter" type="submit" />
         </form>
     """
-#ici on renvoie un formulaire.
 
-reroute_js = '''
+
+# ici on renvoie un formulaire.
+
+reroute_js = """
     <script type="text/javascript">
     window.open('/gift', '_top')
     </script>
-''' 
-#astuce pour renvoyer dynamiquement vers une autre page
+"""
+# astuce pour renvoyer dynamiquement vers une autre page
 
-#Question 0L lancer le code et allez sur la page http://localhost:8080/gift
+# Question 0L lancer le code et allez sur la page http://localhost:8080/gift
 # recuperez le fichier bottle2.py sur le dépot et mettez la dans votre dossier
+
+@app.get("/")
+def index():
+    return reroute_js
 
 @app.post("/gift")  # or @route('/login', method='POST')
 def process_gift():
-    kind = request.forms.get("kind") or request.json.get("kind")
-    #Question 1 
-    
-    if #question_2:
+    kind = request.forms.get("kind");:w
+
+    # Question 1: creeer un cadeau de la sorte kind
+
+    if True:  # a remplacer par qulque chose, cest la question 2
         yield f"{gift} added to sledge <br/> sledge is now {sledge.gifts}"
     else:
         message = f"sledge is full, shipping {sledge.gifts}<br>"
@@ -153,37 +146,32 @@ def process_gift():
         message = f"sledge now has {sledge.gifts}"
 
         yield message
-    time.sleep(2)
-    yield reroute_js
 
 
+"""
 @app.route("/sledge")
 def view_sledge():
     response.content_type = "application/json"
 
     return json.dumps(sledge.__dict__, default=lambda o: o.__dict__)
 
-
-
-
-
+"""
 @app.route("/ship")
 def ship():
-    #Question 4 implementer ici la livraison
+    # Question 4 implementer ici la livraison
     pass
-    
+
 
 """Question5 ajouter un statut aux cadeaux est il new, wrapped, waiting
  ready, shipping ou delivered"""
 
- 
 
 """Quesiton 6 Modifier le code pour mettre a jour le statut des cadeaux au fur et a mesure"
 """
 
-""" question 7 creer une vue '/gifts' qui affiche tous les cadeaux depuis 
+""" question 7 creer une vue '/gifts' qui affiche tous les cadeaux depuis
 le départ avec les informations utiles.
-vous pouves vous inspierer de : 
+vous pouves vous inspierer de :
 <ul>
 <li>{gift}</li>
 <li> </li>
@@ -201,18 +189,18 @@ except ValueError as exc:
     #faire quelque chose avec str(exc)
 
 Question 9 : Utiliser le code suivant pour voir un suivi en direct des cadeaux.
- à la place de 
+ à la place de
 if __name__ == "__main__":
     app.run(host="localhost", port=8080, debug=True)
-    
-    
+
+
 copier coller :
-    
+
 
 from wsgiref.simple_server import make_server, WSGIServer
 from socketserver import ThreadingMixIn
 
-class ThreadingWSGIServer(ThreadingMixIn, WSGIServer): 
+class ThreadingWSGIServer(ThreadingMixIn, WSGIServer):
     pass
 
 if __name__ == "__main__":
@@ -221,9 +209,9 @@ if __name__ == "__main__":
         httpd.serve_forever()
     except:
         httpd.shutdown()
-        httpd.server_close()    
-    
-Ajouter a la vue gift:   
+        httpd.server_close()
+
+Ajouter a la vue gift:
     yield '''
     <script language="javascript">
 setInterval(function(){
@@ -231,12 +219,10 @@ setInterval(function(){
 }, 500);
 </script>
     '''
- Dans deux fenetres creez et voyez l'evolution    
-    
-    
+ Dans deux fenetres creez et voyez l'evolution
+
+
 """
-
-
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8080, debug=True)

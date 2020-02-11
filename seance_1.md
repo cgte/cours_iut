@@ -102,9 +102,11 @@ def create_point(x,y):
 
 class Point:
     """ creates a simple point
-    >>> point = Point(0, 0)
-    >>> origine.x
-    0
+    '''
+    >>> #point = Point(0, 0)
+    >>> #origine.x
+
+    '''
     """
 
     def __init__(self, x, y):
@@ -117,6 +119,7 @@ class Point:
 Si on veut obtenir la distance à l'origine on ajoute la méthode `norme2` comme suit.
 
 ```python
+
 class Point:
     """ Models simple points
     >>> p = Point(0,1)
