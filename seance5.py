@@ -62,7 +62,7 @@ class Sledge:
 
     @property
     def free_load(self):
-        return self.max_load - sum(gift.weight for gift in self.gifts)
+        return self.max_load - self.load
 
     @property
     def load(self):
