@@ -71,13 +71,16 @@ if __name__ == "__main__":
 
 ```
 
-3/ implementez remplissez le registe avec les fonctions 'max', 'min', 'moyenne' et 'ecart-type'
+  - Question 3: implementez remplissez le registe avec les fonctions 'max', 'min', 'moyenne' et 'ecart-type'
 
 
 Nous souhaiterions pouvoir obtenir les puissances de n des elements d'une liste en saisissant puiss(n)
 comme entrée.
 
+
 premiere implémentation:
+
+
 4/ faire 4 fonctions, puiss1, puiss2, puiss3 et puiss4 qui renvoient x à la puissance correspondante
 
 Nous voyons que le code se repete beaucoup, nous aimerions pouvoir arbitrairement fabriquer une fonction qui serait renvoyée pour qu'on puisse l'utiliser.
