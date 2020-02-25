@@ -58,7 +58,7 @@ def loop():
     dataset_name = input("Entrz le nom du dataset")
     if dataset_name not in registre_valeurs:
         valeurs = input("Entrez les valeurs séparées par une virgule ")
-        registre_valeurs[message] =
+        registre_valeurs[dataset_name] =
     fonction = input("Donnez le nom de la fonction a utiliser")
     #Afficher le résulat
 
