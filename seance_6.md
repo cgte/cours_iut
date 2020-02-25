@@ -55,7 +55,8 @@ registre_fonction =
 #Ajouter la fonction sum au registre
 
 def loop():
-    if message not in registre_valeurs:
+    dataset_name = input("Entrz le nom du dataset")
+    if dataset_name not in registre_valeurs:
         valeurs = input("Entrez les valeurs séparées par une virgule ")
         registre_valeurs[message] =
     fonction = input("Donnez le nom de la fonction a utiliser")
@@ -67,7 +68,7 @@ if __name__ == "__main__":
       message = input("entrée pour continuer, quittez en tapant exit puis entrée ")
       if message == "exit":
           break
-      loop(message)
+      loop()
 
 ```
 
@@ -81,7 +82,7 @@ comme entrée.
 premiere implémentation:
 
 
-4/ faire 4 fonctions, puiss1, puiss2, puiss3 et puiss4 qui renvoient x à la puissance correspondante
+  - Question 4:  faire 4 fonctions, puiss1, puiss2, puiss3 et puiss4 qui renvoient x à la puissance correspondante
 
 Nous voyons que le code se repete beaucoup, nous aimerions pouvoir arbitrairement fabriquer une fonction qui serait renvoyée pour qu'on puisse l'utiliser.
 
