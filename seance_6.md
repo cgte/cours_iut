@@ -2,11 +2,17 @@
 
 
   - Creer un compte sur gitlab.com
-
+    - Register
   - creer un projet iut
+    - privé
+  - Lancer l'invite de commande bash sur votre machine
+    -  lancer les commandes suggerées: dans la section git global setup
+  -
   - cloner le projet avec l'invite de commande de git sur votre machine
-
+  -
   - creer un dossier td6, créer un fichier rendu.py dedans
+  - git add rendu.py
+
   - lancer la commande `git add td6/rendu.py`
   - lancer la commande `git commit -m "Ajout du rendu du tp"` puis git push
   - vérifiez que le fichier apparait bien en ligne.
