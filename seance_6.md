@@ -42,8 +42,8 @@ KeyError: 'moyenne'
 
 
 remplissez le code suivant pour
-1/avoir deux dictionnaires qui contiendront les noms: valeurs des dataset ansi que des fonctions
-2/Bien convertir les saisies en suite de nombres de type float.
+  - Question  1 :avoir deux dictionnaires qui contiendront les noms: valeurs des dataset ansi que des fonctions
+  - Question 2 : Bien convertir les saisies en suite de nombres de type float.
   - Utilisez la fonction split  regardez de ce `'qwer,tyu,de'.split(',')` vaut
   - Utilisez si possible une liste en conprehension. `exemple = [fonction(x) for x in valeurs]`
 
