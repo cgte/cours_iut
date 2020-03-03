@@ -110,7 +110,7 @@ def chorno(fonction):
       t = time()
       res = fonction()
       print("%2f" % time - t)
-      return
+      return res
    return chronometree
 
 fonction_chrono = chrono(mafonction)
@@ -130,7 +130,7 @@ def chorno(fonction):
       t = time()
       res = fonction(n_nouveau)
       print("%2f" % time - t)
-      return
+      return res
    return chronometree
 
 fonction_chrono = chrono(mafonction)
@@ -157,14 +157,6 @@ Out[8]: 1
 
 ```
 
-5/Utilisez ceci pour renvoyer une fonction qui renvoie la fonction puissance n-ième
-appelez la `pow_n_1`
-
-6/continuez sur cette lancée pour creer une fonction `pown(n)` qui prend un parametre une liste et revoie une liste avec ses elements à la puissance n et integrez les deux fonctions précedentes dans les registres
-
-Nous aimerions automatiquement enregister les fonctions dans le registre, au moment ou nous les écrivons.
-une premiere approche serait la suivante.
-
 ``` python
 def fonction():
   pass
@@ -173,6 +165,15 @@ registre[fonction.__name__] = fonction
 ```
 
 7/ecrivez une fonction register_function qui enregistre la fonction dans le registre.
+
+
+5/Utilisez ceci pour renvoyer une fonction qui renvoie la fonction puissance n-ième
+appelez la `pow_n_1`
+
+6/continuez sur cette lancée pour creer une fonction `pown(n)` qui prend un parametre une liste et revoie une liste avec ses elements à la puissance n et integrez les deux fonctions précedentes dans les registres
+
+Nous aimerions automatiquement enregister les fonctions dans le registre, au moment ou nous les écrivons.
+une premiere approche serait la suivante.
 
 Il existe en fait une possibilité plus élégante de de faire register_function(function), on peut utiliser ce que l'on appelle un décorateur.
 
