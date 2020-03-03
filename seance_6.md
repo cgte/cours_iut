@@ -74,17 +74,50 @@ if __name__ == "__main__":
 
   - Question 3: implementez remplissez le registe avec les fonctions 'max', 'min', 'moyenne' et 'ecart-type'
 
+  - Question 4:  faire 4 fonctions, puiss1, puiss2, puiss3 et puiss4 qui renvoient x à la puissance correspondante
+
+Nous voyons que le code se repete beaucoup, nous aimerions pouvoir arbitrairement fabriquer une fonction qui serait renvoyée pour qu'on puisse l'utiliser.
 
 Nous souhaiterions pouvoir obtenir les puissances de n des elements d'une liste en saisissant puiss(n)
 comme entrée.
 
 
-premiere implémentation:
+```
+#un exemple dans ipython
+
+In [6]: def modn(n):
+   ...:     def monmodulo(p):
+   ...:         return p % n
+   ...:     return monmodulo
+   ...:
+
+In [7]: modn(5)(10)
+Out[7]: 0
+
+In [8]: modn(5)(11)
+Out[8]: 1
+
+```
+
+``` python
+def fonction():
+  pass
+
+registre[fonction.__name__] = fonction
+```
+
+5/modn renvoie donc une fonction. implementez cela pour lespuisssance n-emes d'une liste en fonction du nom.
+
+6 /
+
+7/ecrivez une fonction register_function qui enregistre la fonction dans le registre.
 
 
-  - Question 4:  faire 4 fonctions, puiss1, puiss2, puiss3 et puiss4 qui renvoient x à la puissance correspondante
 
-Nous voyons que le code se repete beaucoup, nous aimerions pouvoir arbitrairement fabriquer une fonction qui serait renvoyée pour qu'on puisse l'utiliser.
+
+
+
+
 
 par exemple pour afficher le temps pris par une fonction on peut faire la chose suivante:
 
@@ -140,37 +173,6 @@ fonction2_chorno = chrono(uneautrefonction)
 
 ```
 
-```
-#un exemple dans ipython
-
-In [6]: def modn(n):
-   ...:     def monmodulo(p):
-   ...:         return p % n
-   ...:     return monmodulo
-   ...:
-
-In [7]: modn(5)(10)
-Out[7]: 0
-
-In [8]: modn(5)(11)
-Out[8]: 1
-
-```
-
-``` python
-def fonction():
-  pass
-
-registre[fonction.__name__] = fonction
-```
-
-7/ecrivez une fonction register_function qui enregistre la fonction dans le registre.
-
-
-5/Utilisez ceci pour renvoyer une fonction qui renvoie la fonction puissance n-ième
-appelez la `pow_n_1`
-
-6/continuez sur cette lancée pour creer une fonction `pown(n)` qui prend un parametre une liste et revoie une liste avec ses elements à la puissance n et integrez les deux fonctions précedentes dans les registres
 
 Nous aimerions automatiquement enregister les fonctions dans le registre, au moment ou nous les écrivons.
 une premiere approche serait la suivante.
